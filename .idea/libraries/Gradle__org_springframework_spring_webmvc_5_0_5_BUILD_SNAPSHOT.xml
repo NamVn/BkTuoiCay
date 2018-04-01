@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-webmvc:5.0.5.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.5.BUILD-SNAPSHOT/c38752de5a6b6b65434894452841fb20245b355d/spring-webmvc-5.0.5.BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.5.BUILD-SNAPSHOT/97b362fb2f4340a559637f77eba026c0686b8b49/spring-webmvc-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.5.BUILD-SNAPSHOT/436b57d002863c4b32ff31f1dc5ee250f7f9d0bc/spring-webmvc-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.5.BUILD-SNAPSHOT/bd3b9c6196abbaea3f140fa2569400cb55be163b/spring-webmvc-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.5.BUILD-SNAPSHOT/133863ad6d237eb18cd5f83f4d5b7112ba60bf9e/spring-webmvc-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

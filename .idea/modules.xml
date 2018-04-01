@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BkTuoiCay.iml" filepath="$PROJECT_DIR$/.idea/modules/BkTuoiCay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BkTuoiCay_main.iml" filepath="$PROJECT_DIR$/.idea/modules/BkTuoiCay_main.iml" group="BkTuoiCay" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BkTuoiCay_test.iml" filepath="$PROJECT_DIR$/.idea/modules/BkTuoiCay_test.iml" group="BkTuoiCay" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HUSTWaterKeeper.iml" filepath="$PROJECT_DIR$/.idea/modules/HUSTWaterKeeper.iml" group="HUSTWaterKeeper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HUSTWaterKeeper/HUSTWaterKeeper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HUSTWaterKeeper/HUSTWaterKeeper_main.iml" group="HUSTWaterKeeper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HUSTWaterKeeper/HUSTWaterKeeper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HUSTWaterKeeper/HUSTWaterKeeper_test.iml" group="HUSTWaterKeeper" />
+    </modules>
+  </component>
+</project>

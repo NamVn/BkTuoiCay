@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:2.0.1.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/92704993cdf34196eb8fd7797a9e935da9fe4b04/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/4533c2328d61b63d71dc2f40b67a0f234ff98547/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/1e08f6cf53568e88c0d1739cc3d2093b00197507/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/3422ebef92ce5100f3dad39130906d26a93d63e6/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/61a5358c60d6839a6da34396235c01cc0c8614cb/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/dad6a2e8e9bd2eac151a227166f14d6130feb127/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.1.BUILD-SNAPSHOT/363196f6c4f694bc5c7fc4d05cc4d45ed73e40cd/spring-boot-test-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

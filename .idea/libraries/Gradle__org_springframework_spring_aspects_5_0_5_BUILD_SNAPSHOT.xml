@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-aspects:5.0.5.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.5.BUILD-SNAPSHOT/e9f6493f2853e9425e9fe54e5c84a6f62ae418a7/spring-aspects-5.0.5.BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.5.BUILD-SNAPSHOT/1126935203ce9660135865e00f649f0523ffa4fa/spring-aspects-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.5.BUILD-SNAPSHOT/7009d7f942404736f7895968a1a3cee590e191d7/spring-aspects-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.5.BUILD-SNAPSHOT/8a085cda7ff8d27576a799ed5d84b3d6bec8516f/spring-aspects-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.0.5.BUILD-SNAPSHOT/fbbdbd5b0579f9fb03de0ee583ae6f44fb711e95/spring-aspects-5.0.5.BUILD-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
