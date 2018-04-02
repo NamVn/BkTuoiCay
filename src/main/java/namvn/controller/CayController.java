@@ -1,7 +1,9 @@
 package namvn.controller;
 
 import namvn.model.Cay;
+import namvn.model.TaiKhoan;
 import namvn.repository.CayDao;
+import namvn.repository.TaiKhoanDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -16,25 +18,53 @@ import static namvn.util.Utils.CAY_UPDATE_SUCESS;
 @RequestMapping(path = "/cay")
 public class CayController {
     @Autowired
+    private TaiKhoanDao mTaiKhoanDao;
+    @Autowired
    private CayDao mCayDao;
 
     //-------Tra lai danh sach cac cay de load len map OK
     @GetMapping(path = "/list")
     public @ResponseBody
-    List<Cay> findAllCayByKhuVucAndTruong(@RequestParam String khuvuc, @RequestParam String truong) {
-        List<Cay> cayList = mCayDao.findAllByKhuVucAndTruong(khuvuc, truong);
-        if (cayList.size()> 0) return cayList;
+    List<Cay> findAllCayByKhuVucAndTruong(@RequestHeader String token,@RequestParam String khuvuc, @RequestParam String truong) {
+        TaiKhoan taiKhoan=mTaiKhoanDao.findByToken(token);
+        if(taiKhoan!=null) {
+            List<Cay> cayList = mCayDao.findAllByKhuVucAndTruong(khuvuc, truong);
+            if (cayList.size() > 0) return cayList;
+            else return null;
+        }
         else return null;
     }
-
-    //-------Khi nguoi dung bam vao cay thieu nuoc thi no se Tra lai nhu cau nuoc cua moi cay
+    /*
+    Lay danh sach tat ca cac cay
+     */
+    @GetMapping(path = "/all")
+    public @ResponseBody
+    List<Cay> findAllCay(@RequestHeader String token) {
+        TaiKhoan taiKhoan=mTaiKhoanDao.findByToken(token);
+        if(taiKhoan!=null) {
+            List<Cay> cayList = mCayDao.findAll();
+            if (cayList.size() > 0) return cayList;
+            else return null;
+        }
+        else return null;
+    }
+    /*
+    Lay thong tin luong nuoc can tuoi
+     */
     @PostMapping(path = "/nhucau",produces = "application/json")
     public @ResponseBody
-    String getNhucau(@RequestBody Cay cay) {
-        Cay tempCay = mCayDao.findCayByToaDo(cay.getToado());
-        if (tempCay != null) return tempCay.getNhucau();
-        else return CAY_ERROR_TOADO;
+    String getNhucau(@RequestHeader String token,@RequestBody Cay cay) {
+        TaiKhoan taiKhoan=mTaiKhoanDao.findByToken(token);
+        if(taiKhoan!=null) {
+            Cay tempCay = mCayDao.findCayByToaDo(cay.getToado());
+            if (tempCay != null) return tempCay.getNhucau();
+            else return CAY_ERROR_TOADO;
+        }
+        else return null;
     }
+    /*
+    Tra lai duong di ngan nhat
+     */
     @PostMapping(path = "/duongdi")
     public @ResponseBody
     String getDuongdi(@RequestParam String toado) {
@@ -46,7 +76,7 @@ public class CayController {
         else return CAY_ERROR_TOADO;
 
     }
-    //--------Tra lai danh sach cac cay da tuoi nuoc roi OK
+    //--------Admin xem Tra lai danh sach cac cay da tuoi nuoc roi OK
     @GetMapping(path = "/datuoi")
     public @ResponseBody
     List<Cay> getCayDaTuoi() {
@@ -55,7 +85,7 @@ public class CayController {
         else return null;
     }
 
-    //-------Tra lai danh sach cac cay dang thieu nuoc OK
+    //-------Admin Tra lai danh sach cac cay dang thieu nuoc OK
     @GetMapping(path = "/thieunuoc")
     public @ResponseBody
     List<Cay> getCayChuaduNuoc() {
@@ -66,10 +96,8 @@ public class CayController {
 
     //---------Cap nhat trang thai cay con thieu bao nhieu nuoc OK
     @PutMapping(path = "/trangthai",produces = "application/json")
-    public String updateTrangThai(@RequestBody Cay cay) {
-        int tempCay = mCayDao.setFixedTrangThaiFor(cay.getTrangthai(), cay.getToado(), cay.getKhuvuc(), cay.getTruong());
-        if (tempCay != 0) return CAY_UPDATE_SUCESS;
-        else return CAY_UPDATE_NO_SUCESS;
+    public void updateTrangThai(@RequestBody Cay cay) {
+        mCayDao.setFixedTrangThaiFor(cay.getTrangthai(), cay.getToado(), cay.getKhuvuc(), cay.getTruong());
 
     }
 }

@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer matk;
+    private Integer id;
     @NotNull
     @Size(max = 30)
     @Column(unique = true)
@@ -22,13 +22,27 @@ public class Admin {
     @NotNull
     @Size(max = 20)
     private String sdt;
+    @NotNull
+    @Size(max = 30)
+    private String token;
 
-    public Integer getMatk() {
-        return matk;
+    public Admin() {
     }
 
-    public void setMatk(Integer matk) {
-        this.matk = matk;
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getTentk() {

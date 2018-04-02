@@ -11,6 +11,11 @@ public interface TaiKhoanDao extends JpaRepository<TaiKhoan, Long> {
      */
     @Query(value = "select * from taikhoans c where c.tentk = ?1 and c.matkhau = ?2", nativeQuery = true)
     public TaiKhoan findByTentkAndMatkhau(String tentk, String matkhau);
+    /*
+    Kiem tra dang nhap OK
+     */
+    @Query(value = "select * from taikhoans c where c.tentk = ?1", nativeQuery = true)
+    public TaiKhoan findByTentk(String tentk);
 
     //CrudRepository
     /*

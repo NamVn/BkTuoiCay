@@ -8,13 +8,15 @@ import javax.validation.constraints.Size;
 public class PhanHoi {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer maph;
+    private Integer id;
     @NotNull
     @Size(max = 200)
     private String mota;
     @NotNull
     @Size(max = 150)
     private String date;
+    @NotNull
+    private int trangthai;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "taikhoan_id", nullable = false,foreignKey = @ForeignKey(name = "PHANHOI_TAIKHOAN_FK"))
     private TaiKhoan taiKhoan;
@@ -23,12 +25,20 @@ public class PhanHoi {
         this.date = date;
     }
 
-    public Integer getMaph() {
-        return maph;
+    public int getTrangthai() {
+        return trangthai;
     }
 
-    public void setMaph(Integer maph) {
-        this.maph = maph;
+    public void setTrangthai(int trangthai) {
+        this.trangthai = trangthai;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getMota() {

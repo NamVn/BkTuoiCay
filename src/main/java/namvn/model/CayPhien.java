@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 public class CayPhien {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer maphien;
+    private Integer id;
     @NotNull
     @Size(max = 30)
     private String dapung;
@@ -28,12 +28,12 @@ public class CayPhien {
     @JoinColumn(name = "cay_id", nullable = false, foreignKey = @ForeignKey(name = "PHIEN_CAY_FK"))
     private Cay cay;
 
-    public Integer getMaphien() {
-        return maphien;
+    public Integer getId() {
+        return id;
     }
 
-    public void setMaphien(Integer maphien) {
-        this.maphien = maphien;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getDapung() {

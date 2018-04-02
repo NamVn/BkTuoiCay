@@ -11,7 +11,7 @@ import java.util.Set;
 public class Cay {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer macay;
+    private Integer id;
     @NotNull
     @Size(max = 100)
 
@@ -40,12 +40,20 @@ public class Cay {
         this.toado = toado;
     }
 
-    public Integer getMacay() {
-        return macay;
+    public Integer getId() {
+        return id;
     }
 
-    public void setMacay(Integer macay) {
-        this.macay = macay;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Set<CayPhien> getCayPhiens() {
+        return cayPhiens;
+    }
+
+    public void setCayPhiens(Set<CayPhien> cayPhiens) {
+        this.cayPhiens = cayPhiens;
     }
 
     public String getToado() {

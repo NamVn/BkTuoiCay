@@ -11,7 +11,7 @@ import java.util.Set;
 public class Voi {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer mavoi;
+    private Integer id;
     @NotNull
     @Size(max = 30)
     private String ten;
@@ -21,12 +21,21 @@ public class Voi {
     private String toado;
     @OneToMany(mappedBy = "voi", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<VoiPhien> voiPhiens = new HashSet<>();
-    public Integer getMavoi() {
-        return mavoi;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setMavoi(Integer mavoi) {
-        this.mavoi = mavoi;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Set<VoiPhien> getVoiPhiens() {
+        return voiPhiens;
+    }
+
+    public void setVoiPhiens(Set<VoiPhien> voiPhiens) {
+        this.voiPhiens = voiPhiens;
     }
 
     public String getTen() {

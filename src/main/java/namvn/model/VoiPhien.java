@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 public class VoiPhien {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer maphien;
+    private Integer id;
     @NotNull
     @Size(max = 100)
     private String date;

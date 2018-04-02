@@ -11,7 +11,7 @@ import java.util.Set;
 public class TaiKhoan {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer matk;
+    private Integer id;
     @NotNull
     @Size(max = 30)
     @Column(unique = true)
@@ -64,12 +64,36 @@ public class TaiKhoan {
     @OneToMany(mappedBy = "taiKhoan", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<VoiPhien> voiPhiens = new HashSet<>();
 
-    public Integer getMatk() {
-        return matk;
+    public Integer getId() {
+        return id;
     }
 
-    public void setMatk(Integer matk) {
-        this.matk = matk;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Set<CongViec> getCongViecs() {
+        return congViecs;
+    }
+
+    public void setCongViecs(Set<CongViec> congViecs) {
+        this.congViecs = congViecs;
+    }
+
+    public Set<CayPhien> getCayPhiens() {
+        return cayPhiens;
+    }
+
+    public void setCayPhiens(Set<CayPhien> cayPhiens) {
+        this.cayPhiens = cayPhiens;
+    }
+
+    public Set<VoiPhien> getVoiPhiens() {
+        return voiPhiens;
+    }
+
+    public void setVoiPhiens(Set<VoiPhien> voiPhiens) {
+        this.voiPhiens = voiPhiens;
     }
 
     public String getTentk() {

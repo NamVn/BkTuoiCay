@@ -32,5 +32,5 @@ public interface CayDao extends JpaRepository<Cay, Long> {
      */
     @Modifying
     @Query(value = "update cays u set u.trangthai = ?1 where u.toado = ?2 and u.khuvuc=?3 and u.truong=?4",nativeQuery = true)
-    int setFixedTrangThaiFor(String trangthai, String toado, String khuvuc, String truong);
+    void setFixedTrangThaiFor(String trangthai, String toado, String khuvuc, String truong);
 }
