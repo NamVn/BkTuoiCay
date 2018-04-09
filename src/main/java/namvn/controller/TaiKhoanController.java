@@ -19,8 +19,6 @@ import static namvn.util.Utils.*;
 public class TaiKhoanController {
     @Autowired
     private TaiKhoanDao mTaiKhoanDao;
-    @Autowired
-    private AdminDao mAdminDao;
 
     @PostMapping(path = "/login", produces = "application/json")
     public @ResponseBody
@@ -35,27 +33,27 @@ public class TaiKhoanController {
      */
     @PostMapping(path = "/register")
     public @ResponseBody
-    String registerUser(@RequestHeader String token, @RequestBody TaiKhoan user) {
-        Admin admin = mAdminDao.findByToken(token);
-        if (admin != null) {
+    String registerUser( @RequestBody TaiKhoan user) {
+       // Admin admin = mAdminDao.findByToken(token);
+        //if (admin != null) {
             TaiKhoan taiKhoan = mTaiKhoanDao.save(new TaiKhoan(user.getTentk(), user.getMatkhau(), user.getGmail(), user.getSdt(), ""));
             if (taiKhoan != null) return AC_REGISTER_SUCESS;
             else return AC_REGISTER_NO_SUCESS;
-        } else return AC_REGISTER_NO_SUCESS;
+        //} else return AC_REGISTER_NO_SUCESS;
     }
 
     //-----ADMIN xoa tai khoan lao cong
     @PostMapping(path = "/delete", produces = "application/json")
     public @ResponseBody
-    String deleteUser(@RequestHeader String token, @RequestBody TaiKhoan user) {
-        Admin admin = mAdminDao.findByToken(token);
-        if (admin != null) {
-            TaiKhoan tk = mTaiKhoanDao.findByTentkAndSdtAndGmail(user.getTentk(), user.getSdt(), user.getGmail());
+    String deleteUser(@RequestBody TaiKhoan user) {
+       // Admin admin = mAdminDao.findByToken(token);
+        //if (admin != null) {
+            TaiKhoan tk = mTaiKhoanDao.findByTentkAndSdt(user.getTentk(), user.getSdt());
             if (tk != null) {
                 mTaiKhoanDao.delete(tk);
                 return AC_DELETE_SUCESS;
             } else return AC_DELETE_NO_SUCESS;
-        } else return AC_DELETE_NO_SUCESS;
+        //} else return AC_DELETE_NO_SUCESS;
     }
 
 

@@ -19,4 +19,39 @@ public class VoiPhien {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "taikhoan_id", nullable = false,foreignKey = @ForeignKey(name = "VOIPHIEN_TAIKHOAN_FK"))
     private TaiKhoan taiKhoan;
+
+    public VoiPhien() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public Voi getVoi() {
+        return voi;
+    }
+
+    public void setVoi(Voi voi) {
+        this.voi = voi;
+    }
+
+    public TaiKhoan getTaiKhoan() {
+        return taiKhoan;
+    }
+
+    public void setTaiKhoan(TaiKhoan taiKhoan) {
+        this.taiKhoan = taiKhoan;
+    }
 }

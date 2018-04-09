@@ -18,8 +18,7 @@ import static namvn.util.Utils.*;
 @Controller
 @RequestMapping(path = "/phanhoi")
 public class PhanHoiController {
-    @Autowired
-    private AdminDao mAdminDao;
+
     @Autowired
     private TaiKhoanDao mTaiKhoanDao;
     @Autowired
@@ -30,7 +29,7 @@ public class PhanHoiController {
      */
     @PostMapping(path = "/send", produces = "application/json")
     public @ResponseBody
-    String sendPhanHoi(@RequestHeader String token, @RequestBody PhanHoi phanHoi) {
+    String sendPhanHoi(@RequestHeader(value = "au-token") String token, @RequestBody PhanHoi phanHoi) {
         TaiKhoan taiKhoan = mTaiKhoanDao.findByToken(token);
         if (taiKhoan != null) {
             phanHoi.setTaiKhoan(taiKhoan);
@@ -45,33 +44,42 @@ public class PhanHoiController {
      */
     @GetMapping(path = "/trangthai", produces = "application/json")
     public @ResponseBody
-    String setTrangThai(@RequestHeader String token, @RequestParam String tentk) {
+    String setTrangThai(@RequestParam String tentk) {
         //Kiem tra co phai admin khong
-        Admin admin = mAdminDao.findByToken(token);
-        if (admin != null) {
-            TaiKhoan user = mTaiKhoanDao.findByTentk(tentk);
-            if (user != null) {
-                mPhanHoiDao.setFixedTrangThaiFor(user.getId());
+        //  Admin admin = mAdminDao.findByToken(token);
+        // if (admin != null) {
+        TaiKhoan user = mTaiKhoanDao.findByTentk(tentk);
+        if (user != null) {
+            List<PhanHoi> phanHois = mPhanHoiDao.findAllByByTrangthaiTaiKhoan("Khong", user.getId());
+            if (phanHois.size() > 0) {
+                for (int i = 0; i < phanHois.size(); i++) {
+                    PhanHoi phanHoi = phanHois.get(i);
+                    phanHoi.setTrangthai("Co");
+                    mPhanHoiDao.save(phanHoi);
+                }
                 return PHANHOI_TRANGTHAI_SUCESS;
-            } else {
-                return PHANHOI_TRANGTHAI_NO_SUCESS;
-            }
-
-        } else return PHANHOI_TRANGTHAI_NO_SUCESS;
+            } else return PHANHOI_TRANGTHAI_NO_SUCESS;
+    }
+        return PHANHOI_TRANGTHAI_NO_SUCESS;
     }
 
     /*
     ADMIN xem tung phan hoi
      */
     @GetMapping(path = "/detail")
-    public PhanHoi getEachPhanHoi(@RequestHeader String token, @RequestParam String tentk) {
-        Admin admin = mAdminDao.findByToken(token);
-        if (admin != null) {
-            TaiKhoan user = mTaiKhoanDao.findByTentk(tentk);
-            if (user != null) {
-                return mPhanHoiDao.findByTaiKhoan(user.getId());
-            } else return null;
+    public @ResponseBody
+    List<PhanHoi> getEachPhanHoi(@RequestParam String tentk) {
+        // Admin admin = mAdminDao.findByToken(token);
+        // if (admin != null) {
+        TaiKhoan user = mTaiKhoanDao.findByTentk(tentk);
+        if (user != null) {
+            List<PhanHoi> list = mPhanHoiDao.findAllByTaiKhoan(user.getId());
+            for (int i = 0; i < list.size(); i++) {
+                list.get(i).setTaiKhoan(null);
+            }
+            return list;
         } else return null;
+        //} else return null;
     }
 
     //------Xem phan hoi theo ngay

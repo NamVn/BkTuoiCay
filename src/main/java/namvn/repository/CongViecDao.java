@@ -10,8 +10,8 @@ public interface CongViecDao extends JpaRepository<CongViec,Long>{
     /*
     Admin giao viec cho nhan vien
      */
-    @Query(value = "select * from congviecs c where c.date=?1",nativeQuery = true)
-    List<CongViec> findAllByDate(String date);
-    @Query(value = "select * from congviecs c where c.date=?1 and c.taikhoan_id=?2",nativeQuery = true)
-    CongViec findByDateAndTaiKhoan(String date ,Integer taikhoan_id);
+    @Query(value = "select * from congviecs c where c.date like  %?1%",nativeQuery = true)
+    List<CongViec> findAllByDateContaining(String date);
+    @Query(value = "select * from congviecs c where c.date like  %?1% and c.taikhoan_id=?2",nativeQuery = true)
+    CongViec findByDateContainingAndTaiKhoan(String date ,Integer taikhoan_id);
 }

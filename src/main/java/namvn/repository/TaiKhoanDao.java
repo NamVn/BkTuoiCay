@@ -21,8 +21,8 @@ public interface TaiKhoanDao extends JpaRepository<TaiKhoan, Long> {
     /*
     Xoa tai khoan theo ten tai khoan va so dien thoai
      */
-    @Query(value = "select * from taikhoans c where c.tentk = ?1 and c.sdt = ?2 and c.gmail=?3", nativeQuery = true)
-    public TaiKhoan findByTentkAndSdtAndGmail(String tentk, String sdt, String gmail);
+    @Query(value = "select * from taikhoans c where c.tentk = ?1 and c.sdt = ?2", nativeQuery = true)
+    public TaiKhoan findByTentkAndSdt(String tentk, String sdt);
 
     @Query(value = "select * from taikhoans c where c.token = ?1", nativeQuery = true)
     public TaiKhoan findByToken(String token);

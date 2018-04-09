@@ -30,7 +30,7 @@ public interface CayDao extends JpaRepository<Cay, Long> {
     /*
     Cap nhat trang thai cua cay
      */
-    @Modifying
-    @Query(value = "update cays u set u.trangthai = ?1 where u.toado = ?2 and u.khuvuc=?3 and u.truong=?4",nativeQuery = true)
-    void setFixedTrangThaiFor(String trangthai, String toado, String khuvuc, String truong);
+
+    @Query(value = "select * from cays c where c.toaDo = ?1  and u.khuvuc=?2 and u.truong=?3",nativeQuery = true)
+    List<Cay> findAllByToadoAndKhuvucAndTruong( String toado, String khuvuc, String truong);
 }

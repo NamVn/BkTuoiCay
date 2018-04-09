@@ -16,20 +16,21 @@ public class PhanHoi {
     @Size(max = 150)
     private String date;
     @NotNull
-    private int trangthai;
-    @ManyToOne(fetch = FetchType.LAZY)
+    private String trangthai;
+
     @JoinColumn(name = "taikhoan_id", nullable = false,foreignKey = @ForeignKey(name = "PHANHOI_TAIKHOAN_FK"))
+    @ManyToOne(fetch = FetchType.LAZY)
     private TaiKhoan taiKhoan;
     public PhanHoi(@NotNull @Size(max = 200) String mota, @NotNull @Size(max = 150) String date) {
         this.mota = mota;
         this.date = date;
     }
 
-    public int getTrangthai() {
+    public String getTrangthai() {
         return trangthai;
     }
 
-    public void setTrangthai(int trangthai) {
+    public void setTrangthai(String trangthai) {
         this.trangthai = trangthai;
     }
 

@@ -52,8 +52,8 @@ public class TaiKhoan {
         this.token = token;
     }
 
-    @OneToMany(mappedBy = "taiKhoan", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<PhanHoi> phanHois = new HashSet<>();
+    @OneToMany (fetch = FetchType.LAZY,mappedBy = "taiKhoan")
+    private Set<PhanHoi> phanHois;
     @OneToMany(mappedBy = "taiKhoan", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<CongViec> congViecs = new HashSet<>();
     //    @OneToOne(fetch = FetchType.LAZY,

@@ -17,11 +17,11 @@ public interface PhanHoiDao extends JpaRepository<PhanHoi,Long> {
     Tim kiem phan hoi theo ten tk
      */
     @Query(value = "select * from phanhois c where c.taikhoan_id=?1", nativeQuery = true)
-    public PhanHoi findByTaiKhoan(Integer taikhoan_id);
+    public List<PhanHoi> findAllByTaiKhoan(Integer taikhoan_id);
     /*
     Cap nhat trang thai
      */
     @Modifying
-    @Query(value =  "update phanhois p set p.trangthai = 1 where p.taikhoan_id=?1",nativeQuery = true)
-    int setFixedTrangThaiFor(Integer taikhoan_id);
+    @Query(value =  "select * from phanhois c where c.trangthai=?1 AND c.taikhoan_id=?2",nativeQuery = true)
+    List<PhanHoi> findAllByByTrangthaiTaiKhoan(String trangthai,Integer taikhoan_id);
 }

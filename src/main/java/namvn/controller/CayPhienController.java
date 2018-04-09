@@ -24,32 +24,36 @@ public class CayPhienController {
     @Autowired
     private TaiKhoanDao mTaiKhoanDao;
     @Autowired
-    private AdminDao mAdminDao;
-    @Autowired
     private CayDao mCayDao;
+
     //---------Chen phien tuoi cay cua tung lao cong
     @PostMapping("/nhap")
-    public String insertData(@RequestBody CayPhien phien){
-        CayPhien tempPhien= mCayPhienDao.save(phien);
-        if(tempPhien!=null) return PHIEN_INSERT_DATA;
+    public @ResponseBody
+    String insertData(@RequestHeader(value = "au-token") String token, @RequestParam String toado, @RequestBody CayPhien phien) {
+        phien.setTaiKhoan(mTaiKhoanDao.findByToken(token));
+        phien.setCay(mCayDao.findCayByToaDo(toado));
+        CayPhien tempPhien = mCayPhienDao.save(phien);
+        if (tempPhien != null) return PHIEN_INSERT_DATA;
         else return PHIEN_ERROR_INSERT_DATA;
     }
+
     /*
     (ADMIN) Tinh so cay ma lao cong da tuoi trong 1 khoang thoi gian
     CHAM CONG
      */
     @GetMapping(path = "/chamcong")
-    public int countCayByUser(@RequestHeader String token,@RequestParam String tentk,@RequestParam String date) {
-        if (mAdminDao.findByToken(token) != null) {
-            TaiKhoan taiKhoan = mTaiKhoanDao.findByTentk(tentk);
-            if (taiKhoan != null) {
-                return (int) mCayPhienDao.findAllByTaiKhoanAndDate(taiKhoan.getId(), date);
+    public @ResponseBody
+    int countCayByUser(@RequestParam String tentk, @RequestParam String date) {
+        //if (mAdminDao.findByToken(token) != null) {
+        TaiKhoan taiKhoan = mTaiKhoanDao.findByTentk(tentk);
+        if (taiKhoan != null) {
+            return (int) mCayPhienDao.findAllByTaiKhoanAndDate(taiKhoan.getId(), date);
 //                List<CayPhien> phienList = mCayPhienDao.findAllByTaiKhoanAndDate(taiKhoan.getId(), date);
 //                if (phienList.size() > 0) return phienList.size();
 //                else return 0;
-            } else return 0;
-        }
-        else return 0;
+        } else return 0;
+        // }
+        // else return 0;
     }
     /*
     Admin kiem tra cay chet do ung nuoc

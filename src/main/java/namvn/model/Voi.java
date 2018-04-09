@@ -22,6 +22,9 @@ public class Voi {
     @OneToMany(mappedBy = "voi", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<VoiPhien> voiPhiens = new HashSet<>();
 
+    public Voi() {
+    }
+
     public Integer getId() {
         return id;
     }

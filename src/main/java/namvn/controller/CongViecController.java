@@ -17,8 +17,8 @@ import static namvn.util.Utils.CONGVIEC_GIAOVIEC_SUCESS;
 @Controller
 @RequestMapping(path = "/congviec")
 public class CongViecController {
-    @Autowired
-    private AdminDao mAdminDao;
+//    @Autowired
+//    private AdminDao mAdminDao;
     @Autowired
     private TaiKhoanDao mTaiKhoanDao;
     @Autowired
@@ -28,33 +28,42 @@ public class CongViecController {
     Admin phan cong cong viec cho user
      */
     @PostMapping(path = "/phancong")
-    public @ResponseBody String sendCongviec(@RequestHeader String token, @RequestBody CongViec congViec) {
-        if (mAdminDao.findByToken(token) != null) {
-            mCongViecDao.save(congViec);
-            return CONGVIEC_GIAOVIEC_SUCESS;
-        } else return CONGVIEC_ERROR_GIAOVIEC;
+    public @ResponseBody String sendCongviec(@RequestParam String tentk,@RequestBody CongViec congViec) {
+       // if (mAdminDao.findByToken(token) != null) {
+            TaiKhoan taiKhoan=mTaiKhoanDao.findByTentk(tentk);
+            if(taiKhoan!=null) {
+                congViec.setTaiKhoan(taiKhoan);
+                mCongViecDao.save(congViec);
+                return CONGVIEC_GIAOVIEC_SUCESS;
+            }
+        else return CONGVIEC_ERROR_GIAOVIEC;
     }
 
     /*
     Admin xem danh sach cac cong viec da giao trong ngay
      */
     @GetMapping(path = "/list")
-    public @ResponseBody List<CongViec> getListCongViec(@RequestHeader String token, @RequestParam String date) {
-        if (mAdminDao.findByToken(token) != null) {
-            List<CongViec> congViecs = mCongViecDao.findAllByDate(date);
-            if (congViecs.size() > 0) return congViecs;
+    public @ResponseBody List<CongViec> getListCongViec( @RequestParam String date) {
+       // if (mAdminDao.findByToken(token) != null) {
+            List<CongViec> congViecs = mCongViecDao.findAllByDateContaining(date);
+            if (congViecs.size() > 0) {
+                for (int i = 0; i < congViecs.size(); i++) {
+                    congViecs.get(i).setTaiKhoan(null);
+                }
+                return congViecs;
+            }
             else return null;
-        } else return null;
+       // } else return null;
     }
     /*
     Lao cong xem cong viec dc giao
      */
     @GetMapping(path = "/see")
-    public @ResponseBody CongViec selectCongViec(@RequestHeader String token, @RequestParam String date){
+    public @ResponseBody String selectCongViec(@RequestHeader(value = "au-token")String token, @RequestParam String date){
         TaiKhoan taiKhoan=mTaiKhoanDao.findByToken(token);
         if(taiKhoan!=null){
-            CongViec congViec=mCongViecDao.findByDateAndTaiKhoan(date,taiKhoan.getId());
-            if(congViec!=null) return congViec;
+            CongViec congViec=mCongViecDao.findByDateContainingAndTaiKhoan(date,taiKhoan.getId());
+            if(congViec!=null) return congViec.getMota();
             else return null;
         }
         else return null;

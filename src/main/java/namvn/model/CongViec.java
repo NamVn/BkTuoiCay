@@ -23,7 +23,8 @@ public class CongViec {
     @JoinColumn(name = "taikhoan_id", nullable = false,foreignKey = @ForeignKey(name = "CONGVIEC_TAIKHOAN_FK"))
     private TaiKhoan taiKhoan;
 
-
+    public CongViec() {
+    }
 
     public Integer getId() {
         return id;

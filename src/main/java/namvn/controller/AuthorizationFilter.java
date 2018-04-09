@@ -58,7 +58,7 @@ public class AuthorizationFilter implements Filter {
 
         // Filter API by permissions
         // Non-require permission
-        if (requestURI.contains("/auth/user/login") || requestURI.contains("/auth/admin/login") || requestURI.contains("/auth/user/register")) {
+        if (requestURI.contains("/account/login") || requestURI.contains("/admin/login") || requestURI.contains("/acoount/register")) {
             chainFilter(req, res, chain);
         } else {
 
@@ -80,8 +80,8 @@ public class AuthorizationFilter implements Filter {
 
                 if (role == USER_ROLE) {
                     // TODO: Check if requestURI is in user's role APIs
-                    if (requestURI.contains("/contact/post") || requestURI.contains("/contacts/1") || requestURI.startsWith("/number/post/") || requestURI.startsWith("/message/post/") || requestURI.startsWith("/email/post/") ||
-                            requestURI.startsWith("/contact/get") || requestURI.startsWith("/number/get/") || requestURI.startsWith("/message/get/")) {
+                    if (requestURI.contains("/cayphien/nhap") || requestURI.contains("/cay/all") || requestURI.contains("/cay/nhucau") || requestURI.contains("/cay/duongdi") || requestURI.contains("/cay/trangthai") ||
+                            requestURI.contains("/cay/list") || requestURI.startsWith("/congviec/see") || requestURI.contains("/phanhoi/send")||requestURI.contains("/voi/all")) {
                         chainFilter(req, res, chain);
                     } else {
                         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -91,9 +91,9 @@ public class AuthorizationFilter implements Filter {
                     }
                 } else if (role == ADMIN_ROLE) {
                     // TODO: Check if requestURI is in admin's role APIs
-                    if (requestURI.contains("/account/register") || requestURI.contains("/account/delete") || requestURI.contains("/phanhoi/trangthai") || requestURI.contains("/phanhoi/detail")||requestURI.contains("/phanhoi/day")
+                    if (requestURI.contains("/account/register") || requestURI.contains("/account/delete") || requestURI.contains("/phanhoi/trangthai") || requestURI.startsWith("/phanhoi/detail")||requestURI.contains("/phanhoi/day")
                             ||requestURI.contains("/phanhoi/week")||requestURI.contains("/phanhoi/month")||requestURI.contains("/congviec/phancong")||requestURI.contains("/congviec/list")
-                            ||requestURI.contains("/cayphien/nhap")||requestURI.contains("/cayphien/chamcong")||requestURI.contains("/cay/datuoi")||requestURI.contains("/cay/thieunuoc")||requestURI.contains("/admin/login")) {
+                            ||requestURI.contains("/cayphien/nhap")||requestURI.contains("/cayphien/chamcong")||requestURI.contains("/cay/datuoi")||requestURI.contains("/cay/thieunuoc")) {
                         chainFilter(req, res, chain);
                     } else {
                         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

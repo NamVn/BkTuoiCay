@@ -28,6 +28,9 @@ public class CayPhien {
     @JoinColumn(name = "cay_id", nullable = false, foreignKey = @ForeignKey(name = "PHIEN_CAY_FK"))
     private Cay cay;
 
+    public CayPhien() {
+    }
+
     public Integer getId() {
         return id;
     }
