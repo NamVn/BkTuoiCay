@@ -17,4 +17,15 @@ public class Utils {
     public static final String PHANHOI_TRANGTHAI_NO_SUCESS = "Cập nhật trạng thái không thành công";
     public static final String CONGVIEC_ERROR_GIAOVIEC = "Không giao được việc, chắc bị lỗi server";
     public static final String CONGVIEC_GIAOVIEC_SUCESS = "Giao vệc thành công";
+    public static final String VOI_MAKE_NEW_SUCESS="Lưu các vòi nước mới thành công";
+    public static final String VOI_MAKE_NEW_NO_SUCESS="Lưu các vòi nước mới thất bại";
+    public static final String VOI_DELETE_SUCESS="Xóa các vòi nước thành công";
+    public static final String VOI_DELETE_NO_SUCESS="Xóa các vòi nước thất bại";
+
+    public static final String NEW_FEED_CONGVIEC="Sep vua phan cong cong viec cho ban";
+    public static final String NEW_FEED_SUCESS="Cập nhật đã xem tin mới thành công";
+    public static final String NEW_FEED_NO_SUCESS="Cập nhật đã xem tin mới thất bại";
+
+    public static final String NO_SEE="Chua xem";
+    public static final String SEE="Da xem";
 }

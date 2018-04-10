@@ -28,6 +28,23 @@ public class TaiKhoan {
     @NotNull
     @Size(max = 30)
     private String token;
+    @NotNull
+    @Size(max = 30)
+    private String cmt;
+    @NotNull
+    @Size(max = 20)
+    private String typeuser;
+    private String anh;
+
+    public TaiKhoan(@NotNull @Size(max = 30) String tentk, @NotNull @Size(max = 20) String matkhau, @NotNull @Size(max = 30) String gmail, @NotNull @Size(max = 20) String sdt, @NotNull @Size(max = 30) String cmt, @NotNull @Size(max = 20) String typeuser, String anh) {
+        this.tentk = tentk;
+        this.matkhau = matkhau;
+        this.gmail = gmail;
+        this.sdt = sdt;
+        this.cmt = cmt;
+        this.typeuser = typeuser;
+        this.anh = anh;
+    }
 
     public TaiKhoan(@NotNull @Size(max = 30) String tentk1, @NotNull @Size(max = 20) String matKhau1) {
         tentk = tentk1;
@@ -56,6 +73,8 @@ public class TaiKhoan {
     private Set<PhanHoi> phanHois;
     @OneToMany(mappedBy = "taiKhoan", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<CongViec> congViecs = new HashSet<>();
+    @OneToMany(mappedBy = "taiKhoan", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<ThongBao> thongBaos = new HashSet<>();
     //    @OneToOne(fetch = FetchType.LAZY,
 //            cascade = CascadeType.ALL,
 //            mappedBy = "taiKhoan")
@@ -63,6 +82,38 @@ public class TaiKhoan {
     private Set<CayPhien> cayPhiens = new HashSet<>();
     @OneToMany(mappedBy = "taiKhoan", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<VoiPhien> voiPhiens = new HashSet<>();
+
+    public String getCmt() {
+        return cmt;
+    }
+
+    public void setCmt(String cmt) {
+        this.cmt = cmt;
+    }
+
+    public String getTypeuser() {
+        return typeuser;
+    }
+
+    public void setTypeuser(String typeuser) {
+        this.typeuser = typeuser;
+    }
+
+    public String getAnh() {
+        return anh;
+    }
+
+    public void setAnh(String anh) {
+        this.anh = anh;
+    }
+
+    public Set<ThongBao> getThongBaos() {
+        return thongBaos;
+    }
+
+    public void setThongBaos(Set<ThongBao> thongBaos) {
+        this.thongBaos = thongBaos;
+    }
 
     public Integer getId() {
         return id;

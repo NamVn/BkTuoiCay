@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/a0567bd8542fa3d68f17fd52e9d8551795f00a21/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/ed4f1391db0031fcf35239efd24208272ddd254b/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +11,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/a3aa55f2ffe880bf1a9e7974cb9808c023bd9a2b/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/ab26b725f110f7f5c6b748d74b43bd1e6fccf8d8/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/62c8293efc15e5949d9fb49654b74f9efdcac7ff/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/41458d7318a8cd216a0eef04e6d6962d54872d/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/e96bca4ff7f9e7d88cba60a24a8d9c53b41ad439/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.1.BUILD-SNAPSHOT/7bf1acbfb6917888d3eb1b16ae38af43a2adb723/spring-boot-autoconfigure-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

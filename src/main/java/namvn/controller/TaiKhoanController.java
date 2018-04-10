@@ -36,7 +36,7 @@ public class TaiKhoanController {
     String registerUser( @RequestBody TaiKhoan user) {
        // Admin admin = mAdminDao.findByToken(token);
         //if (admin != null) {
-            TaiKhoan taiKhoan = mTaiKhoanDao.save(new TaiKhoan(user.getTentk(), user.getMatkhau(), user.getGmail(), user.getSdt(), ""));
+            TaiKhoan taiKhoan = mTaiKhoanDao.save(new TaiKhoan(user.getTentk(), user.getMatkhau(), user.getGmail(), user.getSdt(),user.getCmt(),user.getTypeuser(),user.getAnh()));
             if (taiKhoan != null) return AC_REGISTER_SUCESS;
             else return AC_REGISTER_NO_SUCESS;
         //} else return AC_REGISTER_NO_SUCESS;

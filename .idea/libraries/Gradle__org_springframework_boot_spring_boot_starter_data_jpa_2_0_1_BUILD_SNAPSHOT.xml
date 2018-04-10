@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/1cf8c98bd71a7459cafb9b974f94b80faa09ba30/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/efba7d783e39ff13327ed3aa4824d7c6d9ddcabf/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +11,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/afc8455ca888a8b0fb5bc3492f61579c2c7623bc/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/edbc7be58002fe0cf2352bad4903f8aea56c15eb/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/a68ebf7f2fafc34cb31bcd79ca6f39c8c7e71342/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/b1e75b899afb87d6c6fec75b31366d7413e4926d/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/39e2cc11d2d032320d75ba926341eb4224ebba33/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.0.1.BUILD-SNAPSHOT/ab0ee4f09094de3239bc2ee9c4ed36cdd916c67/spring-boot-starter-data-jpa-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -81,7 +81,9 @@ public class AuthorizationFilter implements Filter {
                 if (role == USER_ROLE) {
                     // TODO: Check if requestURI is in user's role APIs
                     if (requestURI.contains("/cayphien/nhap") || requestURI.contains("/cay/all") || requestURI.contains("/cay/nhucau") || requestURI.contains("/cay/duongdi") || requestURI.contains("/cay/trangthai") ||
-                            requestURI.contains("/cay/list") || requestURI.startsWith("/congviec/see") || requestURI.contains("/phanhoi/send")||requestURI.contains("/voi/all")) {
+                            requestURI.contains("/cay/list") || requestURI.startsWith("/congviec/see") || requestURI.contains("/phanhoi/send")||requestURI.contains("/voi/all")
+                            ||requestURI.contains("/thongbao/get")||requestURI.contains("/thongbao/update")
+                            ||requestURI.contains("voiphien/nhap")) {
                         chainFilter(req, res, chain);
                     } else {
                         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -93,7 +95,8 @@ public class AuthorizationFilter implements Filter {
                     // TODO: Check if requestURI is in admin's role APIs
                     if (requestURI.contains("/account/register") || requestURI.contains("/account/delete") || requestURI.contains("/phanhoi/trangthai") || requestURI.startsWith("/phanhoi/detail")||requestURI.contains("/phanhoi/day")
                             ||requestURI.contains("/phanhoi/week")||requestURI.contains("/phanhoi/month")||requestURI.contains("/congviec/phancong")||requestURI.contains("/congviec/list")
-                            ||requestURI.contains("/cayphien/nhap")||requestURI.contains("/cayphien/chamcong")||requestURI.contains("/cay/datuoi")||requestURI.contains("/cay/thieunuoc")) {
+                            ||requestURI.contains("/cayphien/nhap")||requestURI.contains("/cayphien/chamcong")||requestURI.contains("/cay/datuoi")||requestURI.contains("/cay/thieunuoc")
+                            ||requestURI.contains("/voi/makes")||requestURI.contains("voi/delete")) {
                         chainFilter(req, res, chain);
                     } else {
                         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

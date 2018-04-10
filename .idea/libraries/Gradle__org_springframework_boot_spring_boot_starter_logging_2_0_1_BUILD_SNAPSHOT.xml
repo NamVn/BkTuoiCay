@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/b1c5fcc910607a99f8248dd4f4a5bbdbe2db5908/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/42fe1c37e9e25b5c77186defaeaa9ba26839f7b6/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +11,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/8d769d758754274e0c989fa5e6bd44b38eec91c1/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/b71a2ed5bc68ac108eb507095b54a16db23085a0/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/b544d9f9336cf2977ceae9ef4e4722f4453a03fe/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/918e6ec4c3035514cb18d3a0a98477a6ba82e4f/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/385f53cbeb0ada4d0b7323af87f7399831e9a157/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.1.BUILD-SNAPSHOT/31ed6d2ab40cdbe3cfc1d6e0df47f4c0bb8ecf6d/spring-boot-starter-logging-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

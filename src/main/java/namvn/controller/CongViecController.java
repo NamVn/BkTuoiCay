@@ -2,23 +2,25 @@ package namvn.controller;
 
 import namvn.model.CongViec;
 import namvn.model.TaiKhoan;
-import namvn.repository.AdminDao;
+import namvn.model.ThongBao;
 import namvn.repository.CongViecDao;
 import namvn.repository.TaiKhoanDao;
+import namvn.repository.ThongBaoDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
-import static namvn.util.Utils.CONGVIEC_ERROR_GIAOVIEC;
-import static namvn.util.Utils.CONGVIEC_GIAOVIEC_SUCESS;
+import static namvn.util.Utils.*;
 
 @Controller
 @RequestMapping(path = "/congviec")
 public class CongViecController {
-//    @Autowired
-//    private AdminDao mAdminDao;
+    @Autowired
+    private ThongBaoDao mThongBaoDao;
     @Autowired
     private TaiKhoanDao mTaiKhoanDao;
     @Autowired
@@ -30,10 +32,14 @@ public class CongViecController {
     @PostMapping(path = "/phancong")
     public @ResponseBody String sendCongviec(@RequestParam String tentk,@RequestBody CongViec congViec) {
        // if (mAdminDao.findByToken(token) != null) {
+        Date now = new Date();
             TaiKhoan taiKhoan=mTaiKhoanDao.findByTentk(tentk);
+
             if(taiKhoan!=null) {
                 congViec.setTaiKhoan(taiKhoan);
                 mCongViecDao.save(congViec);
+                SimpleDateFormat dateFormatter = new SimpleDateFormat("MM/dd/yyyy 'at' hh:mm:ss a ");
+                mThongBaoDao.save(new ThongBao(NEW_FEED_CONGVIEC,dateFormatter.format(now),NO_SEE,taiKhoan));
                 return CONGVIEC_GIAOVIEC_SUCESS;
             }
         else return CONGVIEC_ERROR_GIAOVIEC;
