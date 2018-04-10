@@ -33,4 +33,9 @@ public class VoiController {
             else return null;
         //} else return null;
     }
+     /*
+   Lay danh sach tat ca cac cay
+    */
+    //@PostMapping(path = "/create")
+
 }

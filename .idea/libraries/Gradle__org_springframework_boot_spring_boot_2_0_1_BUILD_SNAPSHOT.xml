@@ -2,6 +2,7 @@
   <library name="Gradle: org.springframework.boot:spring-boot:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/7d97233c83da77f2254fed2f96f5e8d083f4ec1e/spring-boot-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/46bc5fed50a5cdcffaea7c999b79ed748b7679ab/spring-boot-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/de441578c90325d46d43498c810b8ab7902c4e41/spring-boot-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/f67d79e38114e25515b3991bca24dee6914b5620/spring-boot-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/7fbbcc27745a4b2039faaf1a1abe18aa525af5de/spring-boot-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/577d11dd71914a07602e511d267b661403f57d40/spring-boot-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/8604bb59c06a2df5d03dd08b61d263ec9fd9f4b7/spring-boot-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.1.BUILD-SNAPSHOT/6c5e770c49d0b6ea0991a92d06d72fccfc5b6c21/spring-boot-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

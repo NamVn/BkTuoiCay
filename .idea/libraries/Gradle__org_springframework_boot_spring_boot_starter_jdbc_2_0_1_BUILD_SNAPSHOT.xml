@@ -2,6 +2,7 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/47bed39b90396c4ae03231171f73fc8c2b05e4dd/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/85af9d1b57c8ee938e0d583acbf93c25e112e888/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/8d9720997aa3d4b4f764da5ea04e84b30f2d5b05/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/ef5df1e839d074acc777ac4089706b1710f1bbc2/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/b671731bd3ad975485ec72b6dabdd6100f41b3bd/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/8dd65ce4459cc6f62bb064a43ebc0db6a9970c20/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/6b6e42e6489b031b0089c98f48353980ad79c6dd/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.0.1.BUILD-SNAPSHOT/2fe8463215d01eb1cca9d7343486f7b7d86622/spring-boot-starter-jdbc-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

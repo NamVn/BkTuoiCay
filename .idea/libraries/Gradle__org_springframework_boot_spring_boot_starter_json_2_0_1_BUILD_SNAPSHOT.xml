@@ -2,6 +2,7 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-json:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/e74d44026cedc22c4c507802556b20424955ada2/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/2e81159a29543c0043923ae3291cf0ea539abd9e/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/86d833c87f9237e91fa4698dd11f7c54c48a0967/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/bfe19a2f26a1cd091908d3fe6481499ba51080ed/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/3e766f5da26e269228e234aa9003b781230213e7/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/8552c18acdb41bc197b3f2f233b612074cd42917/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/30d0240023b8dfdee113e67d368174aebf7d4899/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.1.BUILD-SNAPSHOT/127c873b0930a0090b3bb96558b7f016f714a9ff/spring-boot-starter-json-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

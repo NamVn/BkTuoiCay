@@ -2,6 +2,7 @@
   <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.0.1.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/20f55b2a3d66215327d454e5598762c5f90c7a61/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/19bc6945b8e1513b94a49c7a69ffc1a32380990e/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -11,6 +12,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/78ff4b50d772e100c0b490916fd87123cfbd60e1/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/f9f6969d950ddfaffa19d2ba6ed65095ee807527/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/89a1990af54c8c8b75b2723fe43b140a174c1c23/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/d4cbe9bca463e6118de0d3ff4d8fdc01187a1ab8/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/1a5f5644b1b59e47d61cfd24f6a1063153952e3/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.1.BUILD-SNAPSHOT/4a387976adebeecaefad255df0fe51330fd7200f/spring-boot-starter-tomcat-2.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
